@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +7,6 @@
     <title>Basics Web Text</title>
     <link rel="stylesheet" href="css/main.css">
 </head>
-
 <body>
     <div class="container">
         <header>
@@ -19,9 +17,10 @@
                     <img src="images/ham.svg" alt="toggle menu" class="menu" id="menu">
                 </a>
 
-
                 <ul class="show-desktop hide-mobile" id="nav">
-                    <li id="exit" class="exit-btn hide-desktop"><img src="images/exit.svg" alt="exit menu"></li>
+                    <li id="exit" class="exit-btn hide-desktop">
+                        <img src="images/exit.svg" alt="exit menu">
+                    </li>
                     <li><a href="#">home</a></li>
                     <li><a href="#">services</a></li>
                     <li><a href="#">about</a></li>
@@ -29,8 +28,9 @@
                 </ul>
             </nav>
         </header>
+
         <section>
-            <img src="images/server.svg" alt="server grapjic" class="server">
+            <img src="images/server.svg" alt="server graphic" class="server">
 
             <h1>Web Hosting for the Modern Era</h1>
             <p class="subhead">Go services and pay only for wht you use.</p>
@@ -43,46 +43,46 @@
             <ul>
                 <li>
                     <img src="images/icon-1.svg" alt="Calendar icon">
-                    <p>some paragrap stuff information</p>
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore</p>
                 </li>
-                <ul>
-                    <li>
-                        <img src="images/icon-2.svg" alt="Calendar icon">
-                        <p>some paragrap stuff information</p>
-                    </li>
-                    <ul>
-                        <li>
-                            <img src="images/icon-3.svg" alt="Calendar icon">
-                            <p>some paragrap stuff information</p>
-                        </li>
-                    </ul>
+                <li>
+                    <img src="images/icon-2.svg" alt="Calendar icon">
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore</p>
+                </li>
+                <li>
+                    <img src="images/icon-3.svg" alt="Calendar icon">
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore</p>
+                </li>
+            </ul>
         </div>
     </div>
+
     <div class="gray-container">
         <div class="container">
             <ul>
                 <li>
                     <figure>
-                        <img src="images/user1.png" alt="user testimonial pícture">
-                        <blockquote>some quoute</blockquote>
+                        <img src="images/user1.png" alt="User testimonial picture">
+                        <blockquote>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas tenetur totam, dolore</blockquote>
                         <figcaption>- Jane Doe</figcaption>
                     </figure>
                 </li>
-                <ul>
-                    <li>
-                        <figure>
-                            <img src="images/user2.png" alt="user testimonial pícture">
-                            <blockquote>some quoute</blockquote>
-                            <figcaption>- John Doe</figcaption>
-                        </figure>
-                    </li>
-                </ul>
+                <li>
+                    <figure>
+                        <img src="images/user2.png" alt="User testimonial picture">
+                        <blockquote>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas tenetur totam, dolore</blockquote>
+                        <figcaption>- John Doe</figcaption>
+                    </figure>
+                </li>
+            </ul>
         </div>
     </div>
+
     <div class="container">
         <h2>Start your free trial now</h2>
         <a href="#" class="cta">Get Started</a>
     </div>
+
     <footer>
         <div class="footer-container">
             <div class="container">
@@ -96,6 +96,27 @@
                 </ul>
             </div>
         </div>
-    </footer>
+    </footer>  
 </body>
 </html>
+
+<script>
+
+        var menu = document.getElementById('menu');
+        var nav = document.getElementById('nav');
+        var exit = document.getElementById('exit');
+
+        menu.addEventListener('click',function(e) {
+            nav.classList.toggle('hide-mobile');
+            e.preventDefault();
+        });
+
+        exit.addEventListener('click',function(e) {
+            nav.classList.add('hide-mobile');
+            e.preventDefault();
+        });
+
+
+
+
+ </script>
