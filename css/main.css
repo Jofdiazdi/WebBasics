@@ -53,9 +53,9 @@ h1, .subhead{
     font-size: 1.1em;
 }
 
-.blue-container{
+.pink-container{
     width: 100%;
-    background: #00C2FF;
+    background: rgb(240, 6, 95);
     color: #fff;
     margin-top: 15%;
 }
